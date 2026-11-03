@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Madcap Circuit setup</title>
+    <link
+      rel="icon"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Crect width='16' height='16' rx='3' fill='%234a8c3f'/%3E%3Ccircle cx='8' cy='8' r='4' fill='none' stroke='%23fff' stroke-width='2'/%3E%3C/svg%3E"
+    />
+    <script type="module" crossorigin src="/madcap-prototype-js-01/assets/setup-C1ksM4uJ.js"></script>
+    <link rel="modulepreload" crossorigin href="/madcap-prototype-js-01/assets/motion-BUl62vib.js">
+    <link rel="stylesheet" crossorigin href="/madcap-prototype-js-01/assets/setup-STD7XpU4.css">
+  </head>
+  <body>
+    <main class="setup">
+      <p class="game-name">MADCAP CIRCUIT</p>
+      <h1>DEBUG: PLAYTEST SETUP</h1>
+
+      <form id="setup-form" autocomplete="off" novalidate>
+        <div class="field">
+          <div class="field-head">
+            <label for="seed">SEED</label>
+            <code class="switch">?seed=</code>
+          </div>
+          <div class="field-row">
+            <input
+              id="seed"
+              type="text"
+              inputmode="numeric"
+              autocomplete="off"
+              autocapitalize="off"
+              spellcheck="false"
+              aria-describedby="seed-error"
+            />
+            <button type="button" id="seed-random" class="small-button">RANDOM</button>
+          </div>
+          <p id="seed-error" class="error" hidden></p>
+        </div>
+
+        <fieldset class="field">
+          <legend>TRACK</legend>
+          <div id="track-options"></div>
+        </fieldset>
+
+        <div class="option">
+          <input type="checkbox" id="blind-push" />
+          <label for="blind-push">BLIND PUSH</label>
+          <code class="switch">?blindPush=1</code>
+        </div>
+
+        <div class="option">
+          <input type="checkbox" id="rivals" />
+          <label for="rivals">RIVALS</label>
+          <code class="switch">?rivals=1</code>
+        </div>
+
+        <details id="more">
+          <summary>MORE</summary>
+
+          <div class="field">
+            <div class="field-head">
+              <label for="bot-delay">BOT DELAY (MS)</label>
+              <code class="switch">?botDelay=</code>
+            </div>
+            <input
+              id="bot-delay"
+              type="text"
+              inputmode="numeric"
+              autocomplete="off"
+              autocapitalize="off"
+              spellcheck="false"
+              aria-describedby="bot-delay-error"
+            />
+            <p id="bot-delay-error" class="error" hidden></p>
+          </div>
+
+          <div class="field">
+            <div class="field-head">
+              <label for="motion">MOTION</label>
+              <code class="switch">?motion=</code>
+            </div>
+            <input
+              id="motion"
+              type="text"
+              inputmode="decimal"
+              autocomplete="off"
+              autocapitalize="off"
+              spellcheck="false"
+              aria-describedby="motion-error"
+            />
+            <p id="motion-error" class="error" hidden></p>
+          </div>
+        </details>
+
+        <div class="link-block">
+          <p class="block-label">LINK</p>
+          <div class="link-row">
+            <p id="link-url" class="link-url"></p>
+            <button type="button" id="copy" class="small-button">COPY</button>
+          </div>
+        </div>
+
+        <button type="submit" id="play" class="play-button">PLAY</button>
+      </form>
+    </main>
+  </body>
+</html>
