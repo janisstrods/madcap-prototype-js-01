@@ -5,4 +5,4 @@ Built game only, published from a private source repo by `npm run deploy:pages`.
 - Play: https://janisstrods.github.io/madcap-prototype-js-01/
 - Play with blind push: https://janisstrods.github.io/madcap-prototype-js-01/?blindPush=1
 
-Source: `draft-push-race` @ `e10a71c`
+Source: `main` @ `0ea1cad`
